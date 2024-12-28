@@ -17,7 +17,7 @@
     />
   </head>
   <body id="body" class="">
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top position-relative">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img height="50px" width="50px" src="js.png"
@@ -98,23 +98,77 @@
     <!-- end nav -->
 
     <div
-      id="Text"
-      class="container d-flex align-items-center justify-content-center fs-1 flex-column"
+      id="CrudText"
+      class="container d-flex align-items-center justify-content-center fs-1 flex-column position-relative"
     >
-      <h1>
-        Responsive website <br />
-        with dark mode
-      </h1>
-      <hr>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates
-        possimus dolores ut quas aliquam ratione dolore aut ab consequatur
-        adipisci nesciunt quos, harum laboriosam! Dolorum accusamus totam
-        aspernatur enim?
-      </p>
+      <h1 id="CrudTitle">CRUD EXAMPLE</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="container row justify-content-center">
+        <form
+          action=""
+          id="employee-form"
+          class="row justify-content-center mb-4"
+          autocomplete="off"
+        >
+          <div class="col-8 mb-3">
+            <label id="CrudLabel" for="fName">First Name</label>
+            <input
+              class="form-control"
+              id="fName"
+              type="text"
+              placeholder="Enter First Name"
+            />
+          </div>
+          <div class="col-8 mb-3">
+            <label id="CrudLabel" for="lName">Last Name</label>
+            <input
+              class="form-control"
+              id="lName"
+              type="text"
+              placeholder="Enter Last Name"
+            />
+          </div>
+          <div class="col-8 mb-3">
+            <label id="CrudLabel" for="jDate">Join date</label>
+            <input class="form-control" id="jDate" type="text" />
+          </div>
+          <div class="col-8 mb-3">
+            <label id="CrudLabel" for="Salary">Salary</label>
+            <input
+              class="form-control"
+              id="Salary"
+              type="text"
+              placeholder="Enter Salary"
+            />
+          </div>
+          <div class="col-8">
+            <input
+              class="btn btn-success add-btn"
+              type="submit"
+              value="submit"
+            />
+          </div>
+        </form>
+        <div class="col-10 mt-5">
+          <table class="table">
+            <thead>
+              <tr>
+                <th id="CrudTable">First Name</th>
+                <th id="CrudTable">Last Name</th>
+                <th id="CrudTable">Join Date</th>
+                <th id="CrudTable">Salary</th>
+                <th id="CrudTable">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="crudTable"></tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
+    <script src="app.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

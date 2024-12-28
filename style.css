@@ -1,6 +1,6 @@
 :root {
   --base-color: white;
-  --secondary-color: #e8e9ed;
+  --secondary-color: #dfe0e6;
   --text-color: #111528;
   --text-secondary: #232738;
   --primary-button: #0071ff;
@@ -8,13 +8,13 @@
 }
 .darkmode {
   --base-color: #070b1d;
-  --secondary-color: #101425;
+  --secondary-color: #171c31;
   --text-color: #ffffff;
   --text-secondary: #a4a5b8;
   --primary-button: #3a435d;
   --accent-button: #0071ff;
 }
-#body{
+#body {
   background-color: var(--base-color);
 }
 .navbar {
@@ -36,14 +36,14 @@
   text-decoration-thickness: 3px;
   text-decoration-color: var(--accent-button);
 }
-a.nav-link.active.mx-lg-2{
-    color: var(--text-color);
+a.nav-link.active.mx-lg-2 {
+  color: var(--text-color);
 }
-button.navbar-toggler{
-    background-color: var(--primary-button);
-    border: none;
+button.navbar-toggler {
+  background-color: var(--primary-button);
+  border: none;
 }
-#theme-switch{
+#theme-switch {
   height: 50px;
   width: 50px;
   padding: 0;
@@ -54,30 +54,54 @@ button.navbar-toggler{
   align-items: center;
   border: none;
 }
-#theme-switch svg:last-child{
+#theme-switch svg:last-child {
   display: none;
 }
-.darkmode #theme-switch svg:first-child{
+.darkmode #theme-switch svg:first-child {
   display: none;
 }
-.darkmode #theme-switch svg:last-child{
+.darkmode #theme-switch svg:last-child {
   display: block;
 }
-#Text{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+#CrudText {
+  height: 200px;
 }
-#Text h1{
+#CrudText #CrudTitle {
   text-align: center;
   color: var(--text-color);
-
 }
-#Text p{
+#fName {
+  border-color: var(--accent-button);
+  text-emphasis-color: var(--text-color);
+}
+#lName {
+  border-color: var(--accent-button);
+  text-emphasis-color: var(--text-color);
+}
+#jDate {
+  border-color: var(--accent-button);
+  text-emphasis-color: var(--text-color);
+}
+#Salary {
+  border-color: var(--accent-button);
+  text-emphasis-color: var(--text-color);
+}
+#CrudLabel {
+  color: var(--text-color);
+}
+#CrudSubmit {
+  background-color: var(--primary-button);
+  color: var(--text-color);
+}
+#CrudTable {
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  border-color: var(--accent-button);
   text-align: center;
-  font-size: 20px;
-  color: var(--text-secondary);
-
+}
+#CrudBody {
+  color: var(--text-color);
+  background-color: var(--base-color);
+  border-color: var(--accent-button);
+  text-align: center;
 }
